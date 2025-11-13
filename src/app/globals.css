@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-over: var(--font-fugaz-one);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-alumni: var(--font-alumni);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    185deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(53deg 100% 93%) 0%,
+    hsl(53deg 100% 86%) 0%,
+    hsl(53deg 100% 79%) 0%,
+    hsl(54deg 100% 72%) 2%,
+    hsl(54deg 100% 63%) 3%,
+    hsl(54deg 100% 58%) 5%,
+    hsl(54deg 100% 69%) 8%,
+    hsl(53deg 100% 77%) 11%,
+    hsl(53deg 100% 84%) 14%,
+    hsl(53deg 100% 91%) 18%,
+    hsl(53deg 100% 98%) 23%,
+    hsl(60deg 83% 98%) 28%,
+    hsl(61deg 83% 96%) 34%,
+    hsl(61deg 83% 93%) 41%,
+    hsl(62deg 83% 91%) 50%,
+    hsl(62deg 83% 88%) 62%,
+    hsl(63deg 84% 86%) 86%
+  ) !important;
+}
